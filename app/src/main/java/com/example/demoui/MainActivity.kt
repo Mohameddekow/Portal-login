@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             )
             inputs.forEach { inputs ->
                 if (inputs?.text.toString().isEmpty()) {
-                    inputs?.error = "Required"
+                    inputs?.error = "Input required"
                 }
 
             }
