@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                 binding?.person, binding?.password
             )
             inputs.forEach { inputs ->
-                if (inputs?.text.toString().isEmpty()) {
+                if (inputs?.text.toString().trim().isEmpty()) {
                     inputs?.error = "Input required"
                 }
 
